@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Actividad Práctica - Toyota</title>
+  <!-- enlace a la hoja de estilos-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/estilos.css">
+  
+</head>
+<body>
+<!-- ====== header =======-->
+  <header>
+<nav class="navbar navbar-expand-md mi-navbar mb-4">
+  <div class="container text-center d-flex flex-column align-items-center">
+    <a class="navbar-brand fs-3" href="index.html">toyota</a>
+
+    <!-- Botón hamburguesa -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Enlaces-->
+    <div class="collapse navbar-collapse flex-column align-items-center" id="navbarLinks">
+      <ul class="navbar-nav text-center">
+        <li class="nav-item"><a class="nav-link" href="./html/productos.html">Productos</a></li>
+        <li class="nav-item"><a class="nav-link" href="./html/carrito.html">Carrito</a></li>
+        <li class="nav-item"><a class="nav-link" href="./html/contacto.html">Contacto</a></li>
+        <li class="nav-item"><a class="nav-link" href="./html/sobre-nosotros.html">Sobre Nosotros</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
+
+<!-- ============== seccion principal (hero) ===========-->
+  <section class="hero">
+    <h1>Bienvenidos a Toyota</h1>
+    <p>Descubre nuestros vehículos y elige el ideal para ti</p>
+    <a href="#productos" class="btn btn-primary">Descubrí</a>
+  </section>
+
+<!-- =================== contenido principal ================-->
+  <main>
+    <h2 class="main-title">Descubrí tu proximo Toyota</h2>
+
+<!-- =============== seccion de productos ================-->
+    <section class="grid-autos" id="productos">
+
+<!-- tarjeta 1 -->
+    <article class="card">
+      <h3>Toyota Corolla</h3>
+      <img src="./img/corolla.jpg" alt="Toyota Corolla">
+      <p>
+        Modelo elegante y eficiente, ideal para la ciudad y viajes largos.
+      </p>
+      <a href="./html/productos.html" class="btn btn-outline-primary">Ver más</a>
+    </article>
+
+<!-- tarjeta 2 -->
+    <article class="card">
+      <h3>Toyota SW4</h3>
+      <img src="./img/sw4.jpg" alt="Toyota sw4">
+      <p>
+        Robustez y confort de alta gama, ideal para aventuras y viajes en familia.
+      </p>
+      <a href="./html/productos.html" class="btn btn-outline-primary">Ver más</a>
+    </article>
+
+<!-- tarjeta 3 -->
+    <article class="card">
+      <h3>Toyota Hilux</h3>
+      <img src="./img/hilux.jpg" alt="Toyota Hilux">
+      <p>
+        Robusta y resistente, perfecta para terrenos difíciles y trabajo pesado.
+      </p>
+      <a href="./html/productos.html" class="btn btn-outline-primary">Ver más</a>
+    </article>
+
+<!-- tarjeta 4 -->
+    <article class="card">
+      <h3>Toyota Etios sedan</h3>
+      <img src="./img/etios.jpg" alt="Toyota Etios sedan">
+      <p>
+        Compacto, confiable y económico, ideal para el día a día.
+      </p>
+      <a href="./html/productos.html" class="btn btn-outline-primary">Ver más</a>
+    </article>
+
+<!-- tarjeta 5 -->
+    <article class="card">
+      <h3>Toyota Etios</h3>
+      <img src="./img/etios2.jpg" alt="Toyota Etios">
+      <p>
+        Compacto, confiable y económico, ideal para el día a día.
+      </p>
+      <a href="./html/productos.html" class="btn btn-outline-primary">Ver más</a>
+    </article>
+
+<!-- tarjeta 6-->
+    <article class="card">
+      <h3>Toyota Yaris</h3>
+      <img src="./img/yaris.jpg" alt="Toyota Yaris">
+      <p>
+        Estilo moderno y gran rendimiento para el manejo urbano.
+      </p>
+      <a href="./html/productos.html" class="btn btn-outline-primary">Ver más</a>
+    </article>
+  </section>
+
+<!-- ================== seccion mapa sucursales ==========-->
+  <section>
+    <h2 class="main-title">Encontrá las sucursales más cercanas</h2>
+
+<!-- mapa de google maps-->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53571.71665953528!2d-60.71723579057819!3d-32.944876000201766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7aca2774bc74b%3A0xa563066e31f8f424!2sGinza%20%E2%80%A2%20Concesionario%20Toyota.!5e0!3m2!1ses!2sar!4v1745800741913!5m2!1ses!2sar" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de concesionaria Toyota en Rosario"></iframe>
+  </section>
+  </main>
+
+<!-- ============= footer =================-->
+  <footer>
+    <a href="https://www.instagram.com" target="_blank"><img src="./img/insta.jpg" alt="instagram"></a>
+    <a href="https://www.facebook.com/" target="_blank"><img src="./img/face.jpg" alt="facebook"></a>
+    <a href="https://www.twitter.com" target="_blank"><img src="./img/x.jpg" alt="x"></a>
+    <p>© 2025 toyota argentina</p>
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

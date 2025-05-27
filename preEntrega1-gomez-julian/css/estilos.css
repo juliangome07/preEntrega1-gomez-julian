@@ -1,0 +1,434 @@
+/*--------------------------reset general----------------------------*/
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*--------------------estilo general del body-----------------*/
+body {
+  font-family: sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex: 1;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 24px;
+  border: 2px solid rgba(71, 71, 71, 0.1);
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+}
+
+/*-------------------------------header------------------------*/
+header {
+  background: #d32f2f;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.marca {
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+/*-----------------------------navegacion--------------------------*/
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 16px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+
+nav a:hover {
+  background-color: #b80606;
+}
+/*----------------------------titulos (h2)------------------------------*/
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color:white;
+}
+h3 {
+  text-transform: uppercase;
+}
+p {
+  text-transform: capitalize;
+}
+.main-title {
+  color:#000;
+  text-align: center;
+  text-transform: uppercase;
+}
+/*-----------------------------seccion principal hero-----------------*/
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url(../img/toyota.jpg) no-repeat center center / cover;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.hero h1 {
+  font-size: 40px;
+  margin: 20px;
+  text-transform: uppercase;
+}
+.hero p {
+  font-size: 18px;
+  margin-top: 10px;
+  text-transform: uppercase; 
+}
+/*-------------------------secciones y tarjetas--------------------------*/
+section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  
+}
+section div{
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  
+}
+section div:hover {
+  transform: scale(1.05);
+}
+section div img {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+section div h2 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #000;
+}
+section div p {
+  font-size: 18px;
+  color: #555;
+  min-height: 60px;
+}
+/*-----------------------------botones----------------------------*/
+section button,
+.btn,
+.btn-custom {
+  background-color: #d32f2f;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+section button:hover,
+.btn:hover,
+.btn-custom:hover {
+  background-color: #b71c1c;
+  transform: scale(1.05);
+}
+.btn:active {
+  transform: scale(0.98);
+}
+/*------------------------------galeria de autos--------------------------*/
+.grid-autos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/*----------------------tarjetas de autos--------------------------*/
+.card {
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 500px;
+  margin: 16px;
+  transition: transform 0.3s;
+}
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.card h3 {
+  padding: 16px 0;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+/* Galería personalizada (sobre nosotros) */
+.titulo-galeria h2,
+.sobre-nosotros-texto h2 {
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #ba0c2f;
+  margin-bottom: 1rem;
+}
+
+.grid-galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  
+}
+.grid-galeria .card {
+  background-color: #fff;
+  padding: 12px;
+}
+.grid-galeria .card p {
+  margin: 8px 0;
+  font-size: 16px;
+  color: #555;
+}
+.grid-galeria img,
+.grid-galeria iframe {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s;
+  margin-top: 8px;
+}
+.grid-galeria img:hover,
+.grid-galeria .card:hover {
+  transform: scale(1.05);
+}
+.sobre-nosotros-texto {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  color: #333;
+  line-height: 1.6;
+}
+.sobre-nosotros-texto ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+/*------------------------------footer-----------------------------*/
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background: #d32f2f;
+  color: white;
+}
+footer img {
+  width: 30px;
+  margin: 0 10px;
+  border-radius: 5px;
+}
+footer p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+/* ------------------ navbar personalizada ------------------ */
+.mi-navbar {
+  padding: 1rem 0;
+}
+
+.navbar-brand {
+  color: white !important;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav-link {
+  color: white !important;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin: 5px 0;
+}
+.nav-link:hover {
+  color: #ddd !important;
+}
+
+.navbar-toggler {
+  border: none;
+  background-color: white;
+  margin-top: 10px;
+}
+/* ------------------ SCROLL ANCLA ------------------ */
+#producto {
+  scroll-margin-top: 100px;
+}
+/* ------------------ RESPONSIVE DESIGN ------------------ */
+
+/* Tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  main {
+    max-width: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  section,
+  .productos,
+  .contacto,
+  .sobre-nosotros,
+  .grid-autos,
+  .grid-galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 16px;
+  }
+
+  .producto,
+  .card {
+    width: 100%;
+    max-width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .card img,
+  .producto img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .hero {
+    height: auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+}
+
+/* Móviles */
+@media (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  header {
+    position: static;
+    padding: 16px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  nav a {
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+  }
+
+  .hero {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  main,
+  .container,
+  .contenido,
+  .productos,
+  .contacto,
+  .sobre-nosotros,
+  .galeria {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  section,
+  .grid-autos,
+  .grid-galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .producto,
+  .card {
+    width: 100%;
+    max-width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .card img,
+  .grid-galeria img {
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+  }
+
+  footer img {
+    width: 24px;
+  }
+
+}
+
